@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Deletion Request - Arrowia | Miav Games</title>
+<meta name="description" content="How to request deletion of data collected by Arrowia, a mobile puzzle game by Miav Games.">
+<style>
+  :root{
+    --bg:#0B0F2B; --panel:#141A47; --line:#2A3378;
+    --txt:#F2F5FF; --txt2:#A5B0E0; --accent:#FB4A5C; --amber:#FBBF24;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.7;font-size:16px}
+  .wrap{max-width:780px;margin:0 auto;padding:48px 20px 96px}
+  header{border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:36px}
+  .brand{display:inline-block;background:var(--accent);color:#fff;font-weight:800;
+    letter-spacing:2px;padding:6px 14px;border-radius:8px;font-size:15px}
+  h1{font-size:30px;margin:22px 0 6px;line-height:1.25}
+  .meta{color:var(--txt2);font-size:14px;margin:0}
+  h2{font-size:20px;margin:40px 0 10px;padding-top:8px}
+  p,li{color:#DCE3FA}
+  a{color:#7FD7EA}
+  ul,ol{padding-left:20px}
+  li{margin:8px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    padding:18px 20px;margin:20px 0}
+  .card p:last-child{margin-bottom:0}
+  .card p:first-child{margin-top:0}
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14.5px;display:block;overflow-x:auto}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+  th{background:var(--panel);color:#fff;font-weight:600}
+  td{color:#DCE3FA}
+  .langbar{display:flex;gap:8px;margin-bottom:8px}
+  .langbar button{background:transparent;border:1px solid var(--line);color:var(--txt2);
+    padding:7px 16px;border-radius:999px;cursor:pointer;font-size:14px;font-family:inherit}
+  .langbar button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
+    color:var(--txt2);font-size:14px}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="langbar">
+  <button id="btn-en" aria-pressed="true" onclick="setLang('en')">English</button>
+  <button id="btn-tr" aria-pressed="false" onclick="setLang('tr')">Türkçe</button>
+</div>
+
+<!-- ================= ENGLISH ================= -->
+<div id="en">
+<header>
+  <span class="brand">MIAV</span>
+  <h1>Data Deletion Request</h1>
+  <p class="meta">Arrowia: Arrow Escape Puzzle &middot; Miav Games &middot; Last updated: 5 September 2026</p>
+</header>
+
+<div class="card">
+  <p><strong>Arrowia has no accounts.</strong> There is nothing to sign up for and nothing to log in to,
+  so we hold no name, e-mail address, phone number or precise location for you. Your level progress,
+  stars and coins are stored only in a file on your own device.</p>
+</div>
+
+<h2>1. Delete everything instantly, yourself</h2>
+<p>Because all of your game data lives on your device, you can erase it completely without contacting anyone:</p>
+<ol>
+  <li>Open <strong>Settings</strong> on your Android device.</li>
+  <li>Go to <strong>Apps</strong> &rarr; <strong>Arrowia: Arrow Escape Puzzle</strong> &rarr; <strong>Storage</strong>.</li>
+  <li>Tap <strong>Clear data</strong> (or simply uninstall the game).</li>
+</ol>
+<p>This permanently deletes your level progress, stars, coins, joker inventory, sound and language
+settings, and the local record of which special arrow types you have unlocked. It cannot be undone
+and we cannot restore it for you.</p>
+
+<h2>2. Ask us to delete data held by our providers</h2>
+<p>Arrowia uses third-party services for advertising, analytics and crash reporting. These services
+receive a device-level advertising identifier and technical event data, never your name or e-mail.
+To request deletion of that data:</p>
+<ol>
+  <li>Send an e-mail to <a href="mailto:contact@zeynepbalci.com">contact@zeynepbalci.com</a>.</li>
+  <li>Use the subject line <strong>Arrowia - data deletion request</strong>.</li>
+  <li>Include your <strong>Android advertising ID</strong> so we can identify the records.
+  You can find it under <em>Settings &rarr; Google &rarr; Ads</em> on your device.</li>
+</ol>
+<p>We reply within <strong>7 days</strong> and complete the request within <strong>30 days</strong>.
+We will confirm by e-mail when it is done. There is no charge for this.</p>
+
+<h2>3. What gets deleted and what is kept</h2>
+<table>
+  <tr><th>Data</th><th>On request</th><th>Retention if not deleted</th></tr>
+  <tr><td>Advertising ID and ad interaction data (Unity Ads)</td><td>Deleted</td><td>Held by the ad provider under its own policy</td></tr>
+  <tr><td>App interaction and gameplay events (Firebase Analytics)</td><td>Deleted</td><td>Automatically deleted after 14 months</td></tr>
+  <tr><td>Crash and performance logs (Firebase Crashlytics)</td><td>Deleted</td><td>Automatically deleted after 90 days</td></tr>
+  <tr><td>Approximate location derived from IP address</td><td>Deleted</td><td>Not stored by us in identifiable form</td></tr>
+  <tr><td>Level progress, stars, coins and settings</td><td>You delete these yourself (section 1)</td><td>Stays on your device until you clear data or uninstall</td></tr>
+  <tr><td>Google Play purchase records (if you bought anything)</td><td><strong>Kept</strong></td><td>Retained by Google Play as long as tax and accounting law requires. We cannot delete these.</td></tr>
+</table>
+
+<h2>4. Cut off new data collection</h2>
+<ul>
+  <li><strong>Reset or delete your advertising ID:</strong> <em>Settings &rarr; Privacy &rarr; Ads</em>
+  on your Android device. Deleting it stops personalised advertising in every app.</li>
+  <li><strong>Uninstall Arrowia.</strong> No further data is sent once the game is removed.</li>
+</ul>
+
+<h2>5. Contact</h2>
+<p>Miav Games &middot; <a href="mailto:contact@zeynepbalci.com">contact@zeynepbalci.com</a><br>
+Full privacy policy: <a href="https://alzenn.github.io/legal/arrowia.html">alzenn.github.io/legal/arrowia.html</a></p>
+
+<footer>
+  <p>&copy; 2026 Miav Games &middot; Arrowia</p>
+</footer>
+</div>
+
+<!-- ================= TÜRKÇE ================= -->
+<div id="tr" hidden>
+<header>
+  <span class="brand">MIAV</span>
+  <h1>Veri Silme Talebi</h1>
+  <p class="meta">Arrowia: Arrow Escape Puzzle &middot; Miav Games &middot; Son güncelleme: 5 Eylül 2026</p>
+</header>
+
+<div class="card">
+  <p><strong>Arrowia'da hesap yok.</strong> Kayıt olunacak ya da giriş yapılacak bir yer bulunmuyor;
+  bu yüzden adını, e-posta adresini, telefonunu veya kesin konumunu tutmuyoruz. Bölüm ilerlemen,
+  yıldızların ve coinlerin yalnızca kendi cihazındaki bir dosyada duruyor.</p>
+</div>
+
+<h2>1. Her şeyi anında kendin sil</h2>
+<p>Tüm oyun verin cihazında durduğu için kimseyle iletişime geçmeden tamamen silebilirsin:</p>
+<ol>
+  <li>Android cihazında <strong>Ayarlar</strong>'ı aç.</li>
+  <li><strong>Uygulamalar</strong> &rarr; <strong>Arrowia: Arrow Escape Puzzle</strong> &rarr; <strong>Depolama</strong> yolunu izle.</li>
+  <li><strong>Verileri temizle</strong>'ye dokun (ya da oyunu doğrudan kaldır).</li>
+</ol>
+<p>Bu işlem bölüm ilerlemeni, yıldızlarını, coinlerini, joker envanterini, ses ve dil ayarlarını ve
+hangi özel ok tiplerini açtığının cihazdaki kaydını kalıcı olarak siler. Geri alınamaz ve bizim
+tarafımızdan geri getirilemez.</p>
+
+<h2>2. Sağlayıcılardaki veriyi silmemizi iste</h2>
+<p>Arrowia; reklam, analiz ve çökme raporlaması için üçüncü taraf servisler kullanıyor. Bu servisler
+cihaz düzeyinde bir reklam kimliği ve teknik olay verisi alıyor; adını veya e-postanı asla almıyor.
+Bu verinin silinmesini talep etmek için:</p>
+<ol>
+  <li><a href="mailto:contact@zeynepbalci.com">contact@zeynepbalci.com</a> adresine e-posta gönder.</li>
+  <li>Konu satırına <strong>Arrowia - veri silme talebi</strong> yaz.</li>
+  <li><strong>Android reklam kimliğini</strong> ekle ki kayıtları bulabilelim.
+  Cihazında <em>Ayarlar &rarr; Google &rarr; Reklamlar</em> altında görebilirsin.</li>
+</ol>
+<p>Taleplere <strong>7 gün</strong> içinde dönüş yapıyor, <strong>30 gün</strong> içinde tamamlıyoruz.
+İşlem bitince e-postayla teyit ediyoruz. Ücretsizdir.</p>
+
+<h2>3. Ne siliniyor, ne saklanıyor</h2>
+<table>
+  <tr><th>Veri</th><th>Talep üzerine</th><th>Silinmezse saklama süresi</th></tr>
+  <tr><td>Reklam kimliği ve reklam etkileşim verisi (Unity Ads)</td><td>Silinir</td><td>Reklam sağlayıcısında kendi politikasına göre tutulur</td></tr>
+  <tr><td>Uygulama etkileşimi ve oynanış olayları (Firebase Analytics)</td><td>Silinir</td><td>14 ay sonra otomatik silinir</td></tr>
+  <tr><td>Çökme ve performans günlükleri (Firebase Crashlytics)</td><td>Silinir</td><td>90 gün sonra otomatik silinir</td></tr>
+  <tr><td>IP adresinden türetilen yaklaşık konum</td><td>Silinir</td><td>Tarafımızda tanımlanabilir biçimde saklanmaz</td></tr>
+  <tr><td>Bölüm ilerlemesi, yıldızlar, coinler ve ayarlar</td><td>Kendin silersin (bölüm 1)</td><td>Verileri temizleyene veya oyunu kaldırana kadar cihazında kalır</td></tr>
+  <tr><td>Google Play satın alma kayıtları (satın alma yaptıysan)</td><td><strong>Saklanır</strong></td><td>Vergi ve muhasebe mevzuatının gerektirdiği süre boyunca Google Play tarafından tutulur. Bunları silemiyoruz.</td></tr>
+</table>
+
+<h2>4. Yeni veri toplanmasını durdur</h2>
+<ul>
+  <li><strong>Reklam kimliğini sıfırla veya sil:</strong> Android cihazında
+  <em>Ayarlar &rarr; Gizlilik &rarr; Reklamlar</em>. Silmek, tüm uygulamalarda kişiselleştirilmiş reklamı durdurur.</li>
+  <li><strong>Arrowia'yı kaldır.</strong> Oyun kaldırıldıktan sonra hiçbir veri gönderilmez.</li>
+</ul>
+
+<h2>5. İletişim</h2>
+<p>Miav Games &middot; <a href="mailto:contact@zeynepbalci.com">contact@zeynepbalci.com</a><br>
+Tam gizlilik politikası: <a href="https://alzenn.github.io/legal/arrowia.html">alzenn.github.io/legal/arrowia.html</a></p>
+
+<footer>
+  <p>&copy; 2026 Miav Games &middot; Arrowia</p>
+</footer>
+</div>
+
+<script>
+function setLang(l){
+  document.getElementById('en').hidden = (l !== 'en');
+  document.getElementById('tr').hidden = (l !== 'tr');
+  document.getElementById('btn-en').setAttribute('aria-pressed', l === 'en');
+  document.getElementById('btn-tr').setAttribute('aria-pressed', l === 'tr');
+  document.documentElement.lang = l;
+  try { localStorage.setItem('arrowia_delete_lang', l); } catch(e){}
+}
+try {
+  var saved = localStorage.getItem('arrowia_delete_lang');
+  if (saved) setLang(saved);
+  else if ((navigator.language || '').toLowerCase().startsWith('tr')) setLang('tr');
+} catch(e){}
+</script>
+</div>
+</body>
+</html>
